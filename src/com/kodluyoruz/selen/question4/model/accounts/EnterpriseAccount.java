@@ -1,4 +1,25 @@
 package com.kodluyoruz.selen.question4.model.accounts;
 
-public class EnterpriseAccount {
+import com.kodluyoruz.selen.question4.model.User;
+import com.kodluyoruz.selen.question4.model.insurance.Insurance;
+
+import java.util.List;
+
+public class EnterpriseAccount extends Account{
+
+
+    public EnterpriseAccount(User user, List<Insurance> insurances) {
+        super(user, insurances);
+    }
+
+    @Override
+    void addInsurance(Insurance insurance) {
+        getInsurances().add(insurance);
+    }
+
+
+    @Override
+    public int compareTo(Account o) {
+        return this.hashCode() - o.hashCode() ;
+    }
 }

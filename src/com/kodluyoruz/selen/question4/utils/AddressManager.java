@@ -1,4 +1,4 @@
-package com.kodluyoruz.selen.question4.service;
+package com.kodluyoruz.selen.question4.utils;
 
 import com.kodluyoruz.selen.question4.model.User;
 import com.kodluyoruz.selen.question4.model.addresses.IAddress;
